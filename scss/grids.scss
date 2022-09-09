@@ -1,0 +1,26 @@
+.gridIndex{
+	display: grid;
+	grid-template-areas:
+	"header header header"
+	"main main main"
+	"section-uno section-uno aside"
+	"section-dos section-dos aside"
+	"footer footer footer" ;
+	grid-template-rows: auto auto auto auto auto;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+
+.gridNosotros{
+
+}
+
+.gridComentarios{
+
+}
+
+.gridContacto{
+
+}

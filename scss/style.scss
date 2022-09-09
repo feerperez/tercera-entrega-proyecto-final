@@ -1,0 +1,33 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+@import "grids";
+@import "fuentes";
+
+
+.header{grid-area: header; background-color: white;}
+
+.footer{grid-area: footer; background-color: white;}
+
+.main{grid-area: main; background-color: #FC9EFF;}
+
+.aside{grid-area: aside; background-color: #FC9EFF;}
+
+.section-uno{grid-area: section-uno; background-color: #FC9EFF;}
+
+.section-dos{grid-area: section-dos; background-color: #FC9EFF;}
+
+header{display: flex; border-bottom: solid black 1px; justify-content: center; flex-direction: column; flex-wrap: wrap; align-content: space-around; align-items: center;
+	ul{display: flex;}
+		li{list-style-type: none; padding: 30px; margin: 20px;}
+			a{text-decoration: none;}
+}
+
+footer{display:flex; justify-content: space-around; align-items: center;
+	div{display: flex; align-items: center;}
+}
+
+main{
+	div{}
+		h1{text-align: center;}
+		img{width: 100%;}
+}
