@@ -10,17 +10,22 @@
 	grid-template-columns: 1fr 1fr 1fr;
 }
 
-
-
-
-.gridNosotros{
-
+@media only screen and (max-width: 768px){
+	.gridIndex{
+		display: grid;
+		grid-template-areas:
+		"header header"
+		"main main"
+		"section-uno section-uno"
+		"section-dos section-dos"
+		"footer footer" ;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto auto auto auto auto;
+	}
+	aside{display: none;}
+	main div img{display: none;}
+	nav ul{display: flex; flex-direction:column; align-items: center;}
+	footer{display: flex; flex-direction: column;}
+	.logonone{display: none;}
 }
 
-.gridComentarios{
-
-}
-
-.gridContacto{
-
-}
