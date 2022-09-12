@@ -6,16 +6,23 @@
 
 
 .header{grid-area: header; background-color: white;}
+.headernos{grid-area: header; background-color: white;}
 
 .footer{grid-area: footer; background-color: white;}
+.footernos{grid-area: footer; background-color: white;}
 
 .main{grid-area: main; background-color: #FC9EFF;}
+.mainnos{grid-area: main; background-color: #FC9EFF;}
 
 .aside{grid-area: aside; background-color: #FC9EFF;}
+.asidenos{grid-area: aside; background-color: #FC9EFF;}
 
 .section-uno{grid-area: section-uno; background-color: #FC9EFF;}
+.section-uno-nos{grid-area: section-uno; background-color: #FC9EFF;}
 
 .section-dos{grid-area: section-dos; background-color: #FC9EFF; display: flex; flex-direction: column; align-items: center;}
+.section-dos-nos{grid-area: section-dos; background-color: #FC9EFF;}
+
 
 header{display: flex; border-bottom: solid black 1px; justify-content: center; flex-direction: column; flex-wrap: wrap; align-content: space-around; align-items: center;
 	div h4{color: white; font-size: 1rem; text-align: center;}
@@ -38,3 +45,6 @@ main{
 		img{width: 100%;}
 }
 
+.mypnos{margin: 10px; padding: 5px;}
+.margnos{margin: 5px;}
+.padsubtitle{padding: 10px;}
