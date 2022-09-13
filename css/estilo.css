@@ -236,7 +236,11 @@ main img {
   margin: 10px;
   padding: 5px; }
 
-.margnos {
+.mypind {
+  margin: 8px;
+  padding: 4px; }
+
+.marg {
   margin: 5px; }
 
 .padsubtitle {

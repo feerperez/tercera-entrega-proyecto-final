@@ -1,5 +1,6 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
 
+@import "variables";
 @import "grids";
 @import "fuentes";
 @import "carrusel";
@@ -46,5 +47,6 @@ main{
 }
 
 .mypnos{margin: 10px; padding: 5px;}
-.margnos{margin: 5px;}
+.mypind{margin: 8px; padding: 4px;}
+.marg{margin: 5px;}
 .padsubtitle{padding: 10px;}
