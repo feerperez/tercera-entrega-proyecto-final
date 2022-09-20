@@ -1,52 +1,67 @@
-*{margin: 0; padding: 0; box-sizing: border-box;}
-
-@import "variables";
-@import "grids";
 @import "fuentes";
+@import "map";
+@import "mixins";
+@import "extend";
+@import "grids";
 @import "carrusel";
 
+*{@include myp(0px, 0px); box-sizing: border-box;}
 
-.header{grid-area: header; background-color: white;}
-.headernos{grid-area: header; background-color: white;}
-
-.footer{grid-area: footer; background-color: white;}
-.footernos{grid-area: footer; background-color: white;}
-
-.main{grid-area: main; background-color: #FC9EFF;}
-.mainnos{grid-area: main; background-color: #FC9EFF;}
-
-.aside{grid-area: aside; background-color: #FC9EFF;}
-.asidenos{grid-area: aside; background-color: #FC9EFF;}
-
-.section-uno{grid-area: section-uno; background-color: #FC9EFF;}
-.section-uno-nos{grid-area: section-uno; background-color: #FC9EFF;}
-
-.section-dos{grid-area: section-dos; background-color: #FC9EFF; display: flex; flex-direction: column; align-items: center;}
-.section-dos-nos{grid-area: section-dos; background-color: #FC9EFF;}
+.header{grid-area: header; background-color:map-get($coloresPrincipales,colorWhite); display: flex; border-bottom: solid black 1px; justify-content:map-get($estilos,centro); flex-direction: column; flex-wrap: wrap; align-content: space-around; align-items:map-get($estilos,centro);}
+.headernos{grid-area: header; background-color:map-get($coloresPrincipales,colorWhite); display: flex; border-bottom: solid black 1px; justify-content:map-get($estilos,centro); flex-direction: column; flex-wrap: wrap; align-content: space-around; align-items:map-get($estilos,centro);}
+.headercont{grid-area: header; background-color:map-get($coloresPrincipales,colorWhite); display: flex; border-bottom: solid black 1px; justify-content:map-get($estilos,centro); flex-direction: column; flex-wrap: wrap; align-content: space-around; align-items:map-get($estilos,centro);}
 
 
-header{display: flex; border-bottom: solid black 1px; justify-content: center; flex-direction: column; flex-wrap: wrap; align-content: space-around; align-items: center;
-	div h4{color: white; font-size: 1rem; text-align: center;}
+.footer{grid-area: footer; background-color:map-get($coloresPrincipales,colorWhite); display:flex; justify-content: space-around; align-items:map-get($estilos,centro); border-top: solid black 1px;}
+.footernos{grid-area: footer; background-color:map-get($coloresPrincipales,colorWhite); display:flex; justify-content: space-around; align-items:map-get($estilos,centro); border-top: solid black 1px;}
+.footercont{grid-area: footer; background-color:map-get($coloresPrincipales,colorWhite); display:flex; justify-content: space-around; align-items:map-get($estilos,centro); border-top: solid black 1px;}
+
+
+.main{grid-area: main; background-color:map-get($coloresPrincipales,colorPrimario);}
+.mainnos{grid-area: main; background-color:map-get($coloresPrincipales,colorPrimario);}
+.maincont{grid-area: main; background-color:map-get($coloresPrincipales,colorPrimario);}
+
+
+.aside{grid-area: aside; background-color:map-get($coloresPrincipales,colorPrimario);}
+.asidenos{grid-area: aside; background-color:map-get($coloresPrincipales,colorPrimario);}
+.asidecont{grid-area: aside; background-color:map-get($coloresPrincipales,colorPrimario);}
+
+
+.section-uno{grid-area: section-uno; background-color:map-get($coloresPrincipales,colorPrimario);}
+.section-uno-nos{grid-area: section-uno; background-color:map-get($coloresPrincipales,colorPrimario);}
+.section-uno-cont{grid-area: section-uno; background-color:map-get($coloresPrincipales,colorPrimario);}
+
+
+.section-dos{grid-area: section-dos; background-color:map-get($coloresPrincipales,colorPrimario); display: flex; flex-direction: column; align-items:map-get($estilos,centro);}
+.section-dos-nos{grid-area: section-dos; background-color:map-get($coloresPrincipales,colorPrimario);}
+.section-dos-cont{grid-area: section-dos; background-color:map-get($coloresPrincipales,colorPrimario); display: flex; flex-direction: column; align-items:map-get($estilos,centro);}
+
+.bg-color-fld{background-color:map-get($coloresPrincipales,colorWhite);}
+
+
+header{
+	div h4{color:map-get($coloresPrincipales,colorWhite); font-size: 1rem; text-align:map-get($estilos,centro);}
 		ul{display: flex;}
-			li{list-style-type: none; padding: 20px; margin: 10px;}
+			li{list-style-type: none; @include myp(10px, 20px)};
 				a{text-decoration: none;}
 }
 
-.text-center{text-align: center;}
-.justify{display: flex; justify-content: center;}
-.divheader{background-color: black; width: 100%;}
+.text-center{text-align:map-get($estilos,centro);}
+.justify{display: flex; justify-content:map-get($estilos,centro);}
+.divheader{background-color:map-get($coloresPrincipales,colorBlack); width:map-get($estilos,fullAncho);}
 
-footer{display:flex; justify-content: space-around; align-items: center; border-top: solid black 1px;
-	div{display: flex; align-items: center;}
+footer{
+	div{display: flex; align-items:map-get($estilos,centro);}
 }
 
-main{
-	div{}
-		h1{text-align: center;}
-		img{width: 100%;}
-}
+.botons{display: flex; flex-direction: row;}
 
-.mypnos{margin: 10px; padding: 5px;}
-.mypind{margin: 8px; padding: 4px;}
-.marg{margin: 5px;}
-.padsubtitle{padding: 10px;}
+.tah1{text-align:map-get($estilos,centro);}
+.anchoimg{width:map-get($estilos,fullAncho);}
+
+.mypnos{@include myp(10px, 10px)};
+.mypind{@include myp(8px, 4px)};
+.marginsbt{@include myp(5px, 2px)};
+.padsbt{@include myp(2px, 10px)};
+
+
