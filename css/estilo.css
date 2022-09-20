@@ -23,7 +23,7 @@ form {
 
 .gridIndex {
   display: grid;
-  grid-template-areas: "header header header" "main main main" "section-uno section-uno aside" "section-dos section-dos aside" "footer footer footer";
+  grid-template-areas: "header header header" "main main main" "section-uno section-uno aside" "section-uno section-uno aside" "footer footer footer";
   grid-template-rows: auto auto auto auto auto;
   grid-template-columns: 1fr 1fr 0.5fr; }
 
@@ -51,7 +51,7 @@ form {
   display: grid;
   grid-template-areas: "header header header" "main section-dos aside" "section-uno section-dos aside" "section-uno section-dos aside" "footer footer footer";
   grid-template-rows: auto auto auto auto auto;
-  grid-template-columns: 1fr 1fr 0.5fr; }
+  grid-template-columns: 1fr 1fr 0.3fr; }
 
 @media only screen and (max-width: 768px) {
   .gridNosotros {
@@ -77,7 +77,7 @@ form {
   display: grid;
   grid-template-areas: "header header header" "main main aside" "section-uno section-dos aside" "section-uno section-dos aside" "footer footer footer";
   grid-template-rows: auto auto auto auto auto;
-  grid-template-columns: 1fr 1fr 0.5fr; }
+  grid-template-columns: 1fr 1fr 0.3fr; }
 
 @media only screen and (max-width: 768px) {
   .gridContacto {
@@ -98,6 +98,74 @@ form {
     flex-direction: column; }
   .logonone {
     display: none; } }
+
+.gridProductos {
+  display: grid;
+  grid-template-areas: "header header header" "main main aside" "section-prod section-prod aside" "section-prod section-prod aside" "footer footer footer";
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: 1fr 1fr 0.3fr; }
+
+@media only screen and (max-width: 768px) {
+  .gridProductos {
+    display: grid;
+    grid-template-areas: "header header" "main main" "section-prod section-prod" "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto; }
+  aside {
+    display: none; }
+  main div img {
+    display: none; }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  footer {
+    display: flex;
+    flex-direction: column; }
+  .logonone {
+    display: none; } }
+
+.gridGaleria {
+  display: grid;
+  grid-auto-rows: minmax(200px, auto);
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px; }
+
+.gridImgMain {
+  display: grid;
+  grid-auto-rows: minmax(200px, auto);
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px; }
+
+.prodAnm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.prodAnm:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04); }
+
+.mainAnm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.mainAnm:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04); }
 
 .carrousel {
   width: 60%; }
@@ -196,6 +264,17 @@ form {
   align-content: space-around;
   align-items: center; }
 
+.headerprod {
+  grid-area: header;
+  background-color: white;
+  display: flex;
+  border-bottom: solid black 1px;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  align-items: center; }
+
 .footer {
   grid-area: footer;
   background-color: white;
@@ -220,6 +299,14 @@ form {
   align-items: center;
   border-top: solid black 1px; }
 
+.footerprod {
+  grid-area: footer;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: solid black 1px; }
+
 .main {
   grid-area: main;
   background-color: #FC9EFF; }
@@ -229,6 +316,10 @@ form {
   background-color: #FC9EFF; }
 
 .maincont {
+  grid-area: main;
+  background-color: #FC9EFF; }
+
+.mainprod {
   grid-area: main;
   background-color: #FC9EFF; }
 
@@ -244,6 +335,10 @@ form {
   grid-area: aside;
   background-color: #FC9EFF; }
 
+.asideprod {
+  grid-area: aside;
+  background-color: #FC9EFF; }
+
 .section-uno {
   grid-area: section-uno;
   background-color: #FC9EFF; }
@@ -254,6 +349,10 @@ form {
 
 .section-uno-cont {
   grid-area: section-uno;
+  background-color: #FC9EFF; }
+
+.section-prod {
+  grid-area: section-prod;
   background-color: #FC9EFF; }
 
 .section-dos {

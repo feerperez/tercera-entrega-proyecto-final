@@ -3,6 +3,7 @@
 @import "mixins";
 @import "extend";
 @import "grids";
+@import "animaciones";
 @import "carrusel";
 
 *{@include myp(0px, 0px); box-sizing: border-box;}
@@ -10,31 +11,37 @@
 .header{grid-area: header; background-color:map-get($coloresPrincipales,colorWhite); display: flex; border-bottom: solid black 1px; justify-content:map-get($estilos,centro); flex-direction: column; flex-wrap: wrap; align-content: space-around; align-items:map-get($estilos,centro);}
 .headernos{grid-area: header; background-color:map-get($coloresPrincipales,colorWhite); display: flex; border-bottom: solid black 1px; justify-content:map-get($estilos,centro); flex-direction: column; flex-wrap: wrap; align-content: space-around; align-items:map-get($estilos,centro);}
 .headercont{grid-area: header; background-color:map-get($coloresPrincipales,colorWhite); display: flex; border-bottom: solid black 1px; justify-content:map-get($estilos,centro); flex-direction: column; flex-wrap: wrap; align-content: space-around; align-items:map-get($estilos,centro);}
+.headerprod{grid-area: header; background-color:map-get($coloresPrincipales,colorWhite); display: flex; border-bottom: solid black 1px; justify-content:map-get($estilos,centro); flex-direction: column; flex-wrap: wrap; align-content: space-around; align-items:map-get($estilos,centro);}
 
 
 .footer{grid-area: footer; background-color:map-get($coloresPrincipales,colorWhite); display:flex; justify-content: space-around; align-items:map-get($estilos,centro); border-top: solid black 1px;}
 .footernos{grid-area: footer; background-color:map-get($coloresPrincipales,colorWhite); display:flex; justify-content: space-around; align-items:map-get($estilos,centro); border-top: solid black 1px;}
 .footercont{grid-area: footer; background-color:map-get($coloresPrincipales,colorWhite); display:flex; justify-content: space-around; align-items:map-get($estilos,centro); border-top: solid black 1px;}
+.footerprod{grid-area: footer; background-color:map-get($coloresPrincipales,colorWhite); display:flex; justify-content: space-around; align-items:map-get($estilos,centro); border-top: solid black 1px;}
 
 
 .main{grid-area: main; background-color:map-get($coloresPrincipales,colorPrimario);}
 .mainnos{grid-area: main; background-color:map-get($coloresPrincipales,colorPrimario);}
 .maincont{grid-area: main; background-color:map-get($coloresPrincipales,colorPrimario);}
+.mainprod{grid-area: main; background-color:map-get($coloresPrincipales,colorPrimario);}
 
 
 .aside{grid-area: aside; background-color:map-get($coloresPrincipales,colorPrimario);}
 .asidenos{grid-area: aside; background-color:map-get($coloresPrincipales,colorPrimario);}
 .asidecont{grid-area: aside; background-color:map-get($coloresPrincipales,colorPrimario);}
+.asideprod{grid-area: aside; background-color:map-get($coloresPrincipales,colorPrimario);}
 
 
 .section-uno{grid-area: section-uno; background-color:map-get($coloresPrincipales,colorPrimario);}
 .section-uno-nos{grid-area: section-uno; background-color:map-get($coloresPrincipales,colorPrimario);}
 .section-uno-cont{grid-area: section-uno; background-color:map-get($coloresPrincipales,colorPrimario);}
+.section-prod{grid-area: section-prod; background-color:map-get($coloresPrincipales,colorPrimario);}
 
 
 .section-dos{grid-area: section-dos; background-color:map-get($coloresPrincipales,colorPrimario); display: flex; flex-direction: column; align-items:map-get($estilos,centro);}
 .section-dos-nos{grid-area: section-dos; background-color:map-get($coloresPrincipales,colorPrimario);}
 .section-dos-cont{grid-area: section-dos; background-color:map-get($coloresPrincipales,colorPrimario); display: flex; flex-direction: column; align-items:map-get($estilos,centro);}
+
 
 .bg-color-fld{background-color:map-get($coloresPrincipales,colorWhite);}
 

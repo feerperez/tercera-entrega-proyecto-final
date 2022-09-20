@@ -4,7 +4,7 @@
 	"header header header"
 	"main main main"
 	"section-uno section-uno aside"
-	"section-dos section-dos aside"
+	"section-uno section-uno aside"
 	"footer footer footer" ;
 	grid-template-rows: auto auto auto auto auto;
 	grid-template-columns: 1fr 1fr 0.5fr;
@@ -38,7 +38,7 @@
 	"section-uno section-dos aside"
 	"footer footer footer" ;
 	grid-template-rows: auto auto auto auto auto;
-	grid-template-columns: 1fr 1fr 0.5fr;
+	grid-template-columns: 1fr 1fr 0.3fr;
 }
 
 @media only screen and (max-width: 768px){
@@ -59,6 +59,8 @@
 	footer{display: flex; flex-direction: column;}
 	.logonone{display: none;}
 }
+
+
 .gridContacto{
 	display: grid;
 	grid-template-areas:
@@ -68,7 +70,7 @@
 	"section-uno section-dos aside"
 	"footer footer footer" ;
 	grid-template-rows: auto auto auto auto auto;
-	grid-template-columns: 1fr 1fr 0.5fr;
+	grid-template-columns: 1fr 1fr 0.3fr;
 }
 
 @media only screen and (max-width: 768px){
@@ -88,4 +90,50 @@
 	nav ul{display: flex; flex-direction:column; align-items: center;}
 	footer{display: flex; flex-direction: column;}
 	.logonone{display: none;}
+}
+
+.gridProductos{
+	display: grid;
+	grid-template-areas:
+	"header header header"
+	"main main aside"
+	"section-prod section-prod aside"
+	"section-prod section-prod aside"
+	"footer footer footer" ;
+	grid-template-rows: auto auto auto auto auto;
+	grid-template-columns: 1fr 1fr 0.3fr;
+}
+
+@media only screen and (max-width: 768px){
+	.gridProductos{
+		display: grid;
+		grid-template-areas:
+		"header header"
+		"main main"
+		"section-prod section-prod"
+		"footer footer" ;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto auto auto auto;
+	}
+	aside{display: none;}
+	main div img{display: none;}
+	nav ul{display: flex; flex-direction:column; align-items: center;}
+	footer{display: flex; flex-direction: column;}
+	.logonone{display: none;}
+}
+
+.gridGaleria{
+	display: grid;
+	grid-auto-rows: minmax(200px, auto);
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 20px;
+	padding: 20px;
+}
+
+.gridImgMain{
+	display: grid;
+	grid-auto-rows: minmax(200px, auto);
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 20px;
+	padding: 20px;
 }
