@@ -9,31 +9,43 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Caladea&family=Combo&family=Fira+Sans:ital,wght@1,300&family=Oswald:wght@500&family=Source+Sans+Pro:ital,wght@1,600&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/estilo.css">
 	<title>Dulce Vita - Inicio</title>
 </head>
-<body>
+<body class="body">
 	<div class="gridIndex">
+		<section class="sectionhead divpreheader">
+			<div>
+				<h4 class="divpreheaderh4">ENVÍOS A CABA Y GBA</h4>
+			</div>
+		</section>
 		<header class="header">
 			<div class="divheader">
-				<h4>ENVÍOS A CABA Y GBA</h4>
-			</div>
-			<div>
-				<a href="index.html">
-					<img src="assets/img/logotipo.png" alt="logo de dulcevita">
-				</a>
-			</div>
-			<nav>
-				<ul>
-					<li><a href="index.html">INICIO</a></li>
-					<li><a href="pages/productos.html">PRODUCTOS</a></li>
-					<li><a href="pages/nosotros.html">NOSOTROS</a></li>
-					<li><a href="pages/contacto.html">CONTACTO</a></li>
-				</ul>
-			</nav>
+				<div>
+					<a href="index.html">
+						<img src="assets/img/logotipo.png" alt="logo de dulcevita">
+					</a>
+				</div>
+				<div>
+					<nav>
+						<ul>
+							<li><a href="index.html">INICIO</a></li>
+							<li><a href="pages/productos.html">PRODUCTOS</a></li>
+							<li><a href="pages/nosotros.html">NOSOTROS</a></li>
+							<li><a href="pages/contacto.html">CONTACTO</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>	
 		</header>
 		<main class="main">
-			<h2 class="text-center">PRODUCTOS DESTACADOS</h2>
+			<div>
+				<img class="w-100" src="assets/img/main.jpg" alt="banner principal">
+			</div>
+			<div class="dpfl">
+				<h2 class="text-center inmn">PRODUCTOS DESTACADOS</h2>
+			</div>
 			<div class="gridImgMain">
 				<div class="mainAnm" style="background-image: url(assets/img/pd1.jpeg);"></div>
 				<div class="mainAnm" style="background-image: url(assets/img/pd2.jpeg);"></div>
@@ -46,31 +58,44 @@
 		</aside>
 		<section class="section-uno">
 			<div>
-				<h2 class="marginsbt">BOX DE DULCES</h2>
-				<p class="mypind">Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Esse, impedit eveniet nostrum, amet voluptatum ratione deleniti eius consequatur perspiciatis? Quam laudantium illo, unde, ratione deserunt voluptatibus. Doloremque hic distinctio aliquam. Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Ullam, tempore nemo cupiditate deleniti voluptates natus animi consectetur, voluptate vel explicabo quod voluptatem itaque, ipsa ex, necessitatibus excepturi nobis ea. Odio?</p>
+				<h2 class="marginsbt text-center">NOVEDADES</h2>
+				<p class="mypind">Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Esse, impedit eveniet nostrum, amet voluptatum ratione deleniti eius consequatur perspiciatis? Quam laudantium illo, unde, ratione deserunt voluptatibus. Doloremque hic distinctio aliquam. Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Ullam, tempore nemo cupiditate deleniti voluptates natus animi consectetur, voluptate vel explicabo quod voluptatem itaque, ipsa ex, necessitatibus excepturi nobis ea. Odio? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia accusantium, delectus reprehenderit odit, maiores repellat fugit voluptate optio molestias exercitationem repellendus dolorem. Officia, sed! Voluptatum voluptate quae nesciunt culpa praesentium.</p>
 			</div>
 		</section>
-		<footer class="footer">
-			<div>
-				<h3>REDES SOCIALES</h3>
-				<a href="https://www.facebook.com/" target="_blank">
-					<img src="assets/img/facebook.png" alt="logo de facebook">
-				</a>
-				<a href="https://www.instagram.com/" target="_blank">
-					<img src="assets/img/instagram.png" alt="logo de instagram">
-				</a>
-			</div>
-			<div>
-				<img class="logonone" src="assets/img/logotipo.png" alt="logo dulcevita">
-			</div>
-			<div>
-				<h3>CONTACTO</h3>
-				<a href="https://web.whatsapp.com/" target="_blank">
-					<img src="assets/img/wsp.png" alt="logo de whatsapp">
-				</a>
-			</div>
+		<footer class="footer container-fluid">
+			<section class="dvft">
+				<div>
+					<h3>REDES SOCIALES</h3>
+					<div class="dvlog">
+						<a href="https://www.facebook.com/" target="_blank">
+							<img src="assets/img/facebook.png" alt="logo de facebook">
+						</a>
+						<a href="https://www.instagram.com/" target="_blank">
+							<img src="assets/img/instagram.png" alt="logo de instagram">
+						</a>
+					</div>
+				</div>
+				<div>
+					<h3>CONTACTO</h3>
+					<div class="dvlog">
+						<a href="https://web.whatsapp.com/" target="_blank">
+							<img src="assets/img/wsp.png" alt="logo de whatsapp">
+						</a>
+					</div>
+				</div>
+			</section>	
+				<div>
+					<form action="">
+						<h3>SUSCRIBITE AL NEWSLEATTER</h3>
+						<input type="text" name="Nombre" placeholder="Nombre">
+						<input type="text" name="Correo" placeholder="Correo">
+						<input type="text" name="Telefono" placeholder="Teléfono">
+						<input type="button" value="Enviar" id="boton">
+					</form>
+				</div>
 		</footer>
 	</div>
-<script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
 </body>
 </html>

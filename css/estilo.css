@@ -7,10 +7,11 @@ h2 {
 header nav ul li a {
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
-  color: black; }
+  color: white; }
 
 h3 {
-  font-family: 'Source Sans Pro', sans-serif; }
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white; }
 
 p {
   font-family: 'Fira Sans', sans-serif; }
@@ -23,8 +24,8 @@ form {
 
 .gridIndex {
   display: grid;
-  grid-template-areas: "header header header" "main main main" "section-uno section-uno aside" "section-uno section-uno aside" "footer footer footer";
-  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "sectionhead sectionhead sectionhead" "header header header" "main main main" "section-uno section-uno aside" "section-uno section-uno aside" "footer footer footer";
+  grid-template-rows: auto auto auto auto auto auto;
   grid-template-columns: 1fr 1fr 0.5fr; }
 
 @media only screen and (max-width: 768px) {
@@ -157,7 +158,7 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 4px;
+  border-radius: 8px;
   transition: transform 0.3s ease-in-out;
   background-size: cover;
   background-position: center;
@@ -226,14 +227,54 @@ form {
   width: 100%;
   height: 100%; }
 
+form {
+  width: 300px;
+  margin: auto;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 20px;
+  background: darkgrey; }
+  form h3 {
+    color: black;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 15px; }
+  form input {
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 4px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none; }
+
+#boton {
+  background: white;
+  padding: 10px;
+  border: solid 1px black;
+  border-radius: 20px;
+  font-size: 15px;
+  color: black; }
+
+#boton:hover {
+  cursor: pointer; }
+
+@media (max-width: 480px) {
+  form {
+    width: 100%; } }
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box; }
 
+.body {
+  background-image: url(../assets/img/bgimg.jpg);
+  background-attachment: fixed; }
+
 .header {
   grid-area: header;
-  background-color: white;
+  background-color: black;
   display: flex;
   border-bottom: solid black 1px;
   justify-content: center;
@@ -244,7 +285,7 @@ form {
 
 .headernos {
   grid-area: header;
-  background-color: white;
+  background-color: black;
   display: flex;
   border-bottom: solid black 1px;
   justify-content: center;
@@ -255,7 +296,7 @@ form {
 
 .headercont {
   grid-area: header;
-  background-color: white;
+  background-color: black;
   display: flex;
   border-bottom: solid black 1px;
   justify-content: center;
@@ -266,7 +307,7 @@ form {
 
 .headerprod {
   grid-area: header;
-  background-color: white;
+  background-color: black;
   display: flex;
   border-bottom: solid black 1px;
   justify-content: center;
@@ -277,104 +318,85 @@ form {
 
 .footer {
   grid-area: footer;
-  background-color: white;
+  background-color: black;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  border-top: solid black 1px; }
+  align-items: center; }
 
 .footernos {
   grid-area: footer;
-  background-color: white;
+  background-color: black;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  border-top: solid black 1px; }
+  align-items: center; }
 
 .footercont {
   grid-area: footer;
-  background-color: white;
+  background-color: black;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  border-top: solid black 1px; }
+  align-items: center; }
 
 .footerprod {
   grid-area: footer;
-  background-color: white;
+  background-color: black;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  border-top: solid black 1px; }
+  align-items: center; }
 
 .main {
-  grid-area: main;
-  background-color: #FC9EFF; }
+  grid-area: main; }
 
 .mainnos {
-  grid-area: main;
-  background-color: #FC9EFF; }
+  grid-area: main; }
 
 .maincont {
-  grid-area: main;
-  background-color: #FC9EFF; }
+  grid-area: main; }
 
 .mainprod {
-  grid-area: main;
-  background-color: #FC9EFF; }
+  grid-area: main; }
 
 .aside {
-  grid-area: aside;
-  background-color: #FC9EFF; }
+  grid-area: aside; }
 
 .asidenos {
-  grid-area: aside;
-  background-color: #FC9EFF; }
+  grid-area: aside; }
 
 .asidecont {
-  grid-area: aside;
-  background-color: #FC9EFF; }
+  grid-area: aside; }
 
 .asideprod {
-  grid-area: aside;
-  background-color: #FC9EFF; }
+  grid-area: aside; }
 
 .section-uno {
-  grid-area: section-uno;
-  background-color: #FC9EFF; }
+  grid-area: section-uno; }
 
 .section-uno-nos {
-  grid-area: section-uno;
-  background-color: #FC9EFF; }
+  grid-area: section-uno; }
 
 .section-uno-cont {
-  grid-area: section-uno;
-  background-color: #FC9EFF; }
+  grid-area: section-uno; }
 
 .section-prod {
-  grid-area: section-prod;
-  background-color: #FC9EFF; }
+  grid-area: section-prod; }
 
 .section-dos {
   grid-area: section-dos;
-  background-color: #FC9EFF;
   display: flex;
   flex-direction: column;
   align-items: center; }
 
 .section-dos-nos {
-  grid-area: section-dos;
-  background-color: #FC9EFF; }
+  grid-area: section-dos; }
 
 .section-dos-cont {
   grid-area: section-dos;
-  background-color: #FC9EFF;
   display: flex;
   flex-direction: column;
   align-items: center; }
 
-.bg-color-fld {
-  background-color: white; }
+.sectionhead {
+  grid-area: sectionhead; }
 
 header div h4 {
   color: white;
@@ -399,17 +421,38 @@ header a {
   display: flex;
   justify-content: center; }
 
+.divpreheader {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: center; }
+
+.divpreheaderh4 {
+  color: black; }
+
 .divheader {
-  background-color: black;
-  width: 100%; }
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
 
 footer div {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  justify-content: center;
+  flex-direction: column; }
+
+footer img {
+  width: 40px;
+  height: 40px; }
+
+fieldset {
   display: flex;
   align-items: center; }
 
 .botons {
-  display: flex;
-  flex-direction: row; }
+  display: flex; }
 
 .tah1 {
   text-align: center; }
@@ -432,3 +475,23 @@ footer div {
 .padsbt {
   margin: 2px;
   padding: 10px; }
+
+.dvft {
+  display: flex;
+  flex-direction: column; }
+
+.w-100 {
+  width: 100%; }
+
+.inmn {
+  margin-top: 30px;
+  border: solid 1px black; }
+
+.dpfl {
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke; }
+
+.dvlog {
+  display: flex;
+  flex-direction: row; }

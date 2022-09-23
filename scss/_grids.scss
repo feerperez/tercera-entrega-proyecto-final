@@ -1,12 +1,13 @@
 .gridIndex{
 	display: grid;
 	grid-template-areas:
+	"sectionhead sectionhead sectionhead"
 	"header header header"
 	"main main main"
 	"section-uno section-uno aside"
 	"section-uno section-uno aside"
 	"footer footer footer" ;
-	grid-template-rows: auto auto auto auto auto;
+	grid-template-rows: auto auto auto auto auto auto;
 	grid-template-columns: 1fr 1fr 0.5fr;
 }
 
